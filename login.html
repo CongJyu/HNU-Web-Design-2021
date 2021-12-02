@@ -8,22 +8,28 @@
         <title>Login</title>
         <script>
             function login() {
-                var user=document.getElementById('username');
-                var username_text=user.value;
-                var pass=document.getElementById('username');
-                var password_text=pass.value;
-
-
+                //  这里的用户账户及密码理论上不应该明文存储，此处仅是作为一个例子
+                if (document.getElementById('username').value == "202108030122" &&
+                document.getElementById("password").value == "2021") {
+                    window.location.href="index.html";
+                } else if (document.getElementById("password").value != "2021") {
+                    window.alert("Invalid password!");
+                    document.getElementById('username').value = "";
+                    document.getElementById('password').value = "";
+                } else if (document.getElementById("username").value != "2021") {
+                    window.alert("Invalid username!");
+                    document.getElementById('username').value = "";
+                    document.getElementById('password').value = "";
+                }
             }
-
         </script>
     </head>
     <body>
-        <div id="textin" class="textin">
-            <input type="text" size="30" value=""  placeholder="username" class ="username" id="username"/>
-            <input type="password" size="30" placeholder="password" class="password" id="password"/>
-            <button id="login" class="login" onclick="login()">登录</button>
+        <div id = "textin" class = "textin">
+            <input type = "text" size = "30" placeholder = "username" class = "username" id = "username"/>
+            <input type = "password" size = "30" placeholder = "password" class = "password" id = "password"/>
+            <button id = "login" class = "login" onclick = "login()">Login</button>
         </div>
-        <script src="./js/script_login.js"></script>
+        <!-- <script src="./js/script_login.js"></script> -->
     </body>
 </html>
