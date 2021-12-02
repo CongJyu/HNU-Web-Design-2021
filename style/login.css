@@ -87,9 +87,9 @@ body::after {
     width: 300px;
 }
 .textin {
-    display: flex;/*弹性布局*/
-    flex-direction: column;/*作为列，垂直地显示弹性项目。*/  
-    align-items: center;/*项目位于容器的中央。*/
-    justify-content: center;/*对齐弹性项目,项目位于容器中央*/
-    margin: 15px;/*在一条声明中设置所有外边距属性*/ 
+    display: flex;    /*弹性布局*/
+    flex-direction: column;    /*作为列，垂直地显示弹性项目。*/  
+    align-items: center;    /*项目位于容器的中央。*/
+    justify-content: center;    /*对齐弹性项目,项目位于容器中央*/
+    margin: 15px;    /*在一条声明中设置所有外边距属性*/ 
 }
