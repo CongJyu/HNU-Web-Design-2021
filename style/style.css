@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+@font-face {
+    font-family: sarasa mono;
+    src: url("../fonts/sarasa-mono-slab-sc-bold.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    color: #ffffff;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        "Arial",
+        "PingFang SC",
+        "Hiragino Sans GB",
+        "STHeiti",
+        "Microsoft YaHei",
+        "Microsoft JhengHei",
+        "Source Han Sans SC",
+        "Noto Sans CJK SC",
+        "Source Han Sans CN",
+        "Noto Sans SC",
+        "Source Han Sans TC",
+        "Noto Sans CJK TC",
+        "WenQuanYi Micro Hei",
+        SimSun,
+        sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+/*  Add a dark overlay  */
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.button{
+    font-size: x-large;
+}
+.button1{
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+.button2{
+    position: absolute;
+    top: 150px;
+    right: 100px;
+}
+.button3{
+    position: absolute;
+    bottom: 150px;
+    left: 100px;
+}
+.button4{
+    position: absolute;
+    bottom: 150px;
+    right: 100px;
+}
+.buttonback {
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+}
+.buttongo {
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+}
+
+.button {
+    
+    cursor: pointer;    /*  光标呈现为指示链接的指针（一只手）  */
+    border: 0;
+    padding: 20px 40px;
+    background: rgb(177, 81, 81);
+    color: #fff;
+    border-radius: 35px;    /*  上下左右内边距是 5px  */
+}
+
+.button:focus {
+    outline: 0;
+}
+
+.button:hover {
+    background: #222;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+body * {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 75px;
+    margin: -80px 0 40px;
+    position: relative;
+    /*  top: -250px;  */
+}
+h3 {
+    font-size: 60px;
+    margin: -80px 0 40px;
+    position: relative;
+    top: -200px;
+  }  
+.display {
+    font-size: 160px;
+    z-index: -1;    /*  用于设置图层  */
+    opacity: 0.75;    /*  规定不透明度。从 0.0 （完全透明）到 1.0（完全不透明） */
+    position: absolute;    /*  位置：绝对位置  */
+    bottom: 20px;    /*  把图像的底边缘设置在其包含元素底边缘之上 20像素高的位置  */
+    left: 50%;     /*  把图像的左边缘设置在其包含元素左边缘向右 50%的位置  */
+    transform: translateX(-50%);    /*  定义转换，只是用 X 轴的值。  */
+}
+
+.countdown {
+    /*  display: flex;  */
+    font-family: "sarasa mono";
+    display: none;
+    transform: scale(2);
+}
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.time h2 {
+    margin: 0 0 5px;
+    font-size: 80px;
+}
+
+.color {
+    color: rgb(8, 30, 41);
+    background: rgb(149, 216, 247)
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 45px;
+    }
+    .time {
+        margin: 5px;
+    }
+    .time h2 {
+        font-size: 12px;
+        margin: 0;
+    }
+    .time small {
+        font-size: 10px;
+    }
+}
