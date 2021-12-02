@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8"/>
+        <meta name = "viewport" content = "width = device-width, initial-scale=1.0"/>
+        <meta http-equiv = "X-UA-Compatible" content = "ie = edge"/>
+        <link rel = "stylesheet" href = "./style/login.css"/>               
+        <title>Login</title>
+        <script>
+            function login() {
+                var user=document.getElementById('username');
+                var username_text=user.value;
+                var pass=document.getElementById('username');
+                var password_text=pass.value;
+
+
+            }
+
+        </script>
+    </head>
+    <body>
+        <div id="textin" class="textin">
+            <input type="text" size="30" value=""  placeholder="username" class ="username" id="username"/>
+            <input type="password" size="30" placeholder="password" class="password" id="password"/>
+            <button id="login" class="login" onclick="login()">登录</button>
+        </div>
+        <script src="./js/script_login.js"></script>
+    </body>
+</html>
