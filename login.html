@@ -7,27 +7,39 @@
         <link rel = "stylesheet" href = "./style/login.css"/>               
         <title>Login</title>
         <script>
+            var cnt = 0;
+            var max = 3;
             function login() {
-                //  这里的用户账户及密码理论上不应该明文存储，此处仅是作为一个例子
-                if (document.getElementById('username').value == "202108030122" &&
-                document.getElementById("password").value == "2021") {
-                    window.location.href="index.html";
-                } else if (document.getElementById("password").value != "2021") {
-                    window.alert("Invalid password!");
-                    document.getElementById('username').value = "";
-                    document.getElementById('password').value = "";
-                } else if (document.getElementById("username").value != "2021") {
-                    window.alert("Invalid username!");
-                    document.getElementById('username').value = "";
-                    document.getElementById('password').value = "";
+                //  判断尝试是否超出限定次数
+                if (cnt < 3) {
+                    //  这里的用户账户及密码理论上不应该明文存储，此处仅是作为一个例子
+                    if (document.getElementById('username').value == "202108030122" &&
+                        document.getElementById("password").value == "2021") {
+                        window.location.href="index.html";
+                    } else if (document.getElementById("password").value != "2021") {
+                        window.alert("Invalid password!");
+                        document.getElementById('username').value = "";
+                        document.getElementById('password').value = "";
+                        cnt = cnt + 1;
+                    } else if (document.getElementById("username").value != "2021") {
+                        window.alert("Invalid username!");
+                        document.getElementById('username').value = "";
+                        document.getElementById('password').value = "";
+                        cnt = cnt + 1;
+                    }
+                } else {
+                    //  超出尝试次数，弹出提示
+                    window.alert("Oops! You can only try 3 times!");
+                    window.alert("Reload this page to try again!");
+                    cnt = cnt + 1;
                 }
             }
         </script>
     </head>
     <body>
         <div id = "textin" class = "textin">
-            <input type = "text" size = "30" placeholder = "username" class = "username" id = "username"/>
-            <input type = "password" size = "30" placeholder = "password" class = "password" id = "password"/>
+            <input type = "text" size = "30" placeholder = "Username" class = "username" id = "username" style = "border-radius: 35px"/>
+            <input type = "password" size = "30" placeholder = "Password" class = "password" id = "password" style = "border-radius: 35px"/>
             <button id = "login" class = "login" onclick = "login()">Login</button>
         </div>
         <!-- <script src="./js/script_login.js"></script> -->
