@@ -88,8 +88,7 @@ body::after {
     right: 200px;
 }
 
-.button {
-    
+.button {    
     cursor: pointer;    /*  光标呈现为指示链接的指针（一只手）  */
     border: 0;
     padding: 20px 40px;
