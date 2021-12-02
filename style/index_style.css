@@ -95,7 +95,7 @@ body::after {
     color: #fff;
     border-radius: 35px;    /*  上下左右内边距是 5px  */
 }
-  
+
 .button:focus {
     outline: 0;
 }

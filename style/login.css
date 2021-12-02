@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+@font-face {
+    font-family: sarasa mono;
+    src: url("../fonts/sarasa-mono-slab-sc-bold.ttf");
+}
+
 body {
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
@@ -43,19 +50,37 @@ body::after {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.65);
 }
-.textin{
+
+.textin {
     z-index: 2;
 }
-.username{
+.username {
+    font-size: x-large;
     position: relative;
     top: -25px;
+    border: 0;
+    padding: 10px 40px;
 }
-.password{
+.username:focus {
+    /* outline: 2px solid rgb(177, 81, 81); */
+    background-color: rgb(236, 207, 207);
+}
+.password {
+    font-size: x-large;
     position: relative;
+    border: 0;
+    padding: 10px 40px;
 }
-.login{
+.password:focus {
+    /* outline: 2px solid rgb(177, 81, 81); */
+    background-color: rgb(236, 207, 207);
+}
+.login {
+    font-size: x-large;
     position: relative;
     top: 25px;
+    border: 0;
+    padding: 20px 40px;
 }
 .login {    
     cursor: pointer;    /*  光标呈现为指示链接的指针（一只手）  */
@@ -78,18 +103,22 @@ body::after {
     transform: scale(0.98);
 }
 
-.username{
+.username {
     height: 50px;
     width: 300px;
 }
-.password{
+.password {
     height: 50px;
     width: 300px;
 }
-.textin{
-    display: flex;/*弹性布局*/
-    flex-direction: column;/*作为列，垂直地显示弹性项目。*/  
-    align-items: center;/*项目位于容器的中央。*/
-    justify-content: center;/*对齐弹性项目,项目位于容器中央*/
-    margin: 15px;/*在一条声明中设置所有外边距属性*/ 
+.textin {
+    display: flex;    /*弹性布局*/
+    flex-direction: column;    /*作为列，垂直地显示弹性项目。*/  
+    align-items: center;    /*项目位于容器的中央。*/
+    justify-content: center;    /*对齐弹性项目,项目位于容器中央*/
+    margin: 15px;    /*在一条声明中设置所有外边距属性*/ 
+}
+
+input::placeholder {
+    font-family: "sarasa mono";
 }
