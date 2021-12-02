@@ -8,14 +8,16 @@
         <title>Login</title>
         <script>
             function login() {
-                var user=document.getElementById('username');
-                var username_text=user.value;
-                var pass=document.getElementById('username');
-                var password_text=pass.value;
-
-
+                if(document.getElementById('password').value=="202108030122"&&document.getElementById('username').value=="202108030122")
+                {
+                    window.location.href="index.html";
+                }
+                else {
+                    alert("密码错误！");
+                    username.value="";
+                    password.value="";
+                }
             }
-
         </script>
     </head>
     <body>
