@@ -10,23 +10,23 @@
         <script>
             function whichBrowser() {
                 var userAgent = navigator.userAgent;
-                var browser='unknown';
+                var browser = "unknown";
                 if (userAgent.indexOf("IE") != -1) {
-                    browser="IE";
+                    browser = "IE";
                     window.alert("You are using Internet Explorer now, switch to Safari to get better experience.");
                 } else if (userAgent.indexOf('Firefox') != -1) {
-                    browser="Firefox";
+                    browser = "Firefox";
                     window.alert("You are using Firefox now, switch to Safari to get better experience.");
                 } else if (userAgent.indexOf('OPR') != -1) {
-                    browser="Opera";
+                    browser = "Opera";
                     window.alert("You are using Opera now, switch to Safari to get better experience.");
                 } else if (userAgent.indexOf('Chrome') != -1) {
-                    browser="Chrome";
+                    browser = "Chrome";
                     window.alert("You are using Chrome now, switch to Safari to get better experience.");
                 } else if (userAgent.indexOf('Safari') != -1) {
-                    browser="Safari";
+                    browser = "Safari";
                 } else if (userAgent.indexOf('Trident') != -1) {
-                    browser='IE 11';
+                    browser = "IE 11";
                     window.alert("You are using Internet Explorer now, switch to Safari to get better experience.");
                 }
                 return browser;
