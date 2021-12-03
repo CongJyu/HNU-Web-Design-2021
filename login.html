@@ -14,8 +14,9 @@
                 //  判断尝试是否超出限定次数
                 if (cnt < 3) {
                     //  这里的用户账户及密码理论上不应该明文存储，此处仅是作为一个例子
-                    if (document.getElementById('username').value == "202108030122" &&
-                        document.getElementById("password").value == "2021") {
+                    if (document.getElementById('username').value == "202108030122" && 
+                    document.getElementById("password").value == "2021") {
+                        window.alert("Welcome!");
                         window.location.href="index.html";
                     } else if (document.getElementById("password").value != "2021") {
                         window.alert("Invalid password!");

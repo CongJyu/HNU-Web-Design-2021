@@ -74,16 +74,17 @@ body::after {
     position: relative;
     top: -300px;
 }
+.buttonout {
+    position: relative;
+    top: -300px;
+}
 
 /*
 .div {
-    width: 500px;
+    width: 1000px;
     height: 200px;
     align-items: center;
     justify-content: space-around;
-    background: rgba(0, 0, 0, 0);
-    display: flex;
-    position: absolute;
 }
 */
 

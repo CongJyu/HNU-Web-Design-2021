@@ -23,6 +23,9 @@ function jumptocpp() {
 function jumptoam() {
     window.location.href="examdate_am.html";
 }
+function jumpback() {
+    window.location.href="login.html";
+}
 //  Update countdown time
 function updateCountdown() {
     const currentTime = new Date();
