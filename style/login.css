@@ -55,7 +55,7 @@ body::after {
     z-index: 2;
 }
 .username {
-    font-size: x-large;
+    font-size: large;
     position: relative;
     top: -25px;
     border: 0;
@@ -66,7 +66,7 @@ body::after {
     background-color: rgb(236, 207, 207);
 }
 .password {
-    font-size: x-large;
+    font-size: large;
     position: relative;
     border: 0;
     padding: 10px 40px;
@@ -76,7 +76,7 @@ body::after {
     background-color: rgb(236, 207, 207);
 }
 .login {
-    font-size: x-large;
+    font-size: large;
     position: relative;
     top: 25px;
     border: 0;
@@ -120,5 +120,24 @@ body::after {
 }
 
 input::placeholder {
-    font-family: "sarasa mono";
+    font-family:
+        "sarasa mono",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        "Arial",
+        "PingFang SC",
+        "Hiragino Sans GB",
+        "STHeiti",
+        "Microsoft YaHei",
+        "Microsoft JhengHei",
+        "Source Han Sans SC",
+        "Noto Sans CJK SC",
+        "Source Han Sans CN",
+        "Noto Sans SC",
+        "Source Han Sans TC",
+        "Noto Sans CJK TC",
+        "WenQuanYi Micro Hei",
+        SimSun,
+        sans-serif;
 }

@@ -55,9 +55,9 @@ body::after {
     background-color: rgba(0, 0, 0, 0.65);
 }
 .button {
-    font-size: x-large;
+    font-size: large;
 }
-
+/*
 .button1 {
     position: relative;
     top: -300px;
@@ -78,15 +78,17 @@ body::after {
     position: relative;
     top: -300px;
 }
-
-/*
-.div {
+*/
+.centerbutton {
+    position: absolute;
+    bottom: 50px;
     width: 1000px;
     height: 200px;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
     align-items: center;
     justify-content: space-around;
 }
-*/
 
 .button {
     cursor: pointer;    /*  光标呈现为指示链接的指针（一只手）  */

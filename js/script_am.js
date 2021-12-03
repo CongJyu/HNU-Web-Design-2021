@@ -15,9 +15,11 @@ display.innerText = "Math";
 function forbtn3() {
     window.location.href = "http://10.62.99.245/jpkc/";
 }
-
 function jumpBack() {
     window.location.href = "index.html";
+}
+function jumpRelax() {
+    window.location.href = "relax/index.html";
 }
 
 //  Update countdown time

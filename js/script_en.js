@@ -15,9 +15,11 @@ display.innerText = "English";
 function forbtn4() {
     window.location.href="https://sso.sflep.com/cas/login?service=http%3a%2f%2fcourse.sflep.com%2fuser%2floginredirect.aspx";
 }
-
 function jumpBack() {
     window.location.href = "index.html";
+}
+function jumpRelax() {
+    window.location.href = "relax/index.html";
 }
 
 //  Update countdown time

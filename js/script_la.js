@@ -18,6 +18,9 @@ function forbtn2() {
 function jumpBack() {
     window.location.href = "index.html";
 }
+function jumpRelax() {
+    window.location.href = "relax/index.html";
+}
 
 //  Update countdown time
 function updateCountdown() {
