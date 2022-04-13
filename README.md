@@ -12,7 +12,7 @@
 
 ## 演示体验
 
-点击这里进入：[Demo传送门](https://chen-rain.github.io/projects/demo/login.html)
+点击这里进入：[Demo传送门](https://chen-rain.github.io)
 注意：这个 Demo 移除了「谷歌小恐龙」小游戏，但是本仓库包含它。
 
 > 正确登录用户名请填写：`202108030122`<br>正确登录密码请填写：`2021`
