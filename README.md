@@ -1,5 +1,9 @@
 # HNU-Web-Design-2021
 
+## Warning
+
+***This repository has been archived!***
+
 ## 说明
 
 这是「HNU 网页设计大赛 2021」的作品项目。项目作者以及贡献者：
